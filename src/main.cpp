@@ -35,7 +35,7 @@ int printMatchInfo(const MatchInfo& matchInfo, int& prev_home, int& prev_away) {
         return 0;
     }
     if (status == "TIMED") {
-        std::cout << home << " vs. " << away << " has been timed." <<  << std::endl << std::endl;
+        std::cout << home << " vs. " << away << " has been timed." << std::endl << std::endl;
         return 0;
     }
     if (status == "AWARDED") {
