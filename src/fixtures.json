@@ -867,10 +867,10 @@
             },
             "referees": [],
             "score": {
-                "duration": "REGULAR",
+                "duration": "PENALTY_SHOOTOUT",
                 "fullTime": {
-                    "away": 3,
-                    "home": 4
+                    "away": 0,
+                    "home": 0
                 },
                 "halfTime": {
                     "away": null,
@@ -928,8 +928,8 @@
             "score": {
                 "duration": "REGULAR",
                 "fullTime": {
-                    "away": null,
-                    "home": null
+                    "away": 2,
+                    "home": 1
                 },
                 "halfTime": {
                     "away": null,

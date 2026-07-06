@@ -11,38 +11,37 @@
 #include <sstream>
 #include <vector>
 
-int printMatchInfo(const MatchInfo& matchInfo) {
+int printMatchInfo(const MatchInfo& matchInfo, int& prev_home, int& prev_away) {
 	std::string status = matchInfo.status;
+    std::string home = matchInfo.homeTeam;
+    std::string away = matchInfo.awayTeam;
 
     // printing match status
     if (status == "SCHEDULED") {
-        std::cout << "Match has not started yet." << std::endl;
+        std::cout << home << " vs. " << away << " has not started yet." << std::endl << std::endl;
         return 0;
     }
     if (status == "POSTPONED") {
-        std::cout << "Match has been postponed." << std::endl;
+        std::cout << home << " vs. " << away << " has been postponed." << std::endl << std::endl;
         return 0;
     }
     if (status == "CANCELED") {
-        std::cout << "Match has been canceled." << std::endl;
+        std::cout << home << " vs. " << away << " has been canceled." << std::endl << std::endl;
         return 0;
     }
     if (status == "SUSPENDED") {
-        std::cout << "Match has been suspended." << std::endl;
+        std::cout << home << " vs. " << away << " has been suspended." << std::endl << std::endl;
         return 0;
     }
     if (status == "TIMED") {
-        std::cout << "Match has been timed." << std::endl;
+        std::cout << home << " vs. " << away << " has been timed." << std::endl << std::endl;
         return 0;
     }
     if (status == "AWARDED") {
-        std::cout << "Match has been awarded." << std::endl;
+        std::cout << home << " vs. " << away << " has been awarded." << std::endl << std::endl;
         return 0;
     }
 
-
-    std::string home = matchInfo.homeTeam;
-    std::string away = matchInfo.awayTeam;
     int homeScore = matchInfo.homeScore;
     int awayScore = matchInfo.awayScore;
     int homePenalties = matchInfo.homePenalties;
@@ -68,11 +67,27 @@ int printMatchInfo(const MatchInfo& matchInfo) {
         }
 	}
 
+    if (homeScore != prev_home) {
+        if (homeScore > prev_home) {
+            notify();
+            std::cout << home << " scored!" << std::endl;
+        }
 
+        prev_home = homeScore;
+    }
+
+    if (awayScore != prev_away) {
+        if (awayScore > prev_away) {
+            notify();
+            std::cout << away << " scored!" << std::endl;
+        }
+        prev_away = awayScore;
+    }
+    std::cout << std::endl;
+    return 0; 
     
-
-
 }
+
 void clearConsole() {
 #ifdef _WIN32
     system("cls");
@@ -162,18 +177,20 @@ std::string date_today(){
 
 int main()
 {
-// use when fetching data from api
+
 
     try
     {
-        /*ApiClient api("773fad6d52334e4887abc932c8b10f28");
+        // use when fetching data from api
+        ApiClient api("773fad6d52334e4887abc932c8b10f28");
 		std::string today = date_today();
         std::string endpoint = "/v4/competitions/WC/matches?dateFrom=" + today + "&dateTo=" + today;
         std::string response = api.Get(endpoint);
         using json = nlohmann::json;
-        json initialj = json::parse(response);*/
+        json initialj = json::parse(response);
 
-        nlohmann::json initialj = readJsonFromFile("D:/Code_projects/BallKnowledge/src/fixtures.json");
+		//use when fetching data from local file
+        //nlohmann::json initialj = readJsonFromFile("D:/Code_projects/BallKnowledge/src/fixtures.json");
 
         std::vector<int> prev_home;
         std::vector<int> prev_away;
@@ -187,7 +204,6 @@ int main()
 			prev_away.push_back(matchInfo.awayScore);
 			prev_home.push_back(matchInfo.homeScore);
 		}
-        std::cout << "You are tracking " << matches_to_track << " matches." << std::endl;
 
 		int trackedMatchNumber;
 
@@ -195,40 +211,23 @@ int main()
         
         while (true) {
             
+			//use when fetching data from api
+			response = api.Get(endpoint);
+			json j = json::parse(response);
 
-			//response = api.Get(endpoint);
-			//json j = json::parse(response);
-
-            nlohmann::json j = readJsonFromFile("D:/Code_projects/BallKnowledge/src/fixtures.json");
+			//use when fetching data from local file
+            //nlohmann::json j = readJsonFromFile("D:/Code_projects/BallKnowledge/src/fixtures.json");
 
             for (int i = 0; i < matches_to_track; i++) {
+				std::cout << "Match " << i + 1 << ":" << std::endl;
                 trackedMatchNumber = trackedMatchNumbers[i];
 
                 MatchInfo MatchInfo = monitor(trackedMatchNumber, j);
-				printMatchInfo(MatchInfo);
+				printMatchInfo(MatchInfo, prev_home[i], prev_away[i]);
 
                 if (MatchInfo.islive == true) {
 					atLeastOneMatchisLive = true;
-                }
-
-                if (MatchInfo.homeScore != prev_home[i]) {
-                    if (MatchInfo.homeScore > prev_home[i]) {
-                        notify();
-                        std::cout << MatchInfo.homeTeam << " scored!" << std::endl;
-                    }
-
-                    prev_home[i] = MatchInfo.homeScore;
-                }
-
-                if (MatchInfo.awayScore != prev_away[i]) {
-                    if (MatchInfo.awayScore > prev_away[i]) {
-                        notify();
-                        std::cout << MatchInfo.awayTeam << " scored!" << std::endl;
-                    }
-                    prev_away[i] = MatchInfo.awayScore;
-                }
-
-
+                }                
             }
             if (!atLeastOneMatchisLive) {
                 break;
