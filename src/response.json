@@ -1,0 +1,200 @@
+{
+    "filters": {
+        "dateFrom": "2026-07-04",
+        "dateTo": "2026-07-05",
+        "permission": "TIER_ONE"
+    },
+    "matches": [
+        {
+            "area": {
+                "code": "INT",
+                "flag": null,
+                "id": 2267,
+                "name": "World"
+            },
+            "awayTeam": {
+                "crest": "https://crests.football-data.org/ghana.svg",
+                "id": 763,
+                "name": "Ghana",
+                "shortName": "Ghana",
+                "tla": "GHA"
+            },
+            "competition": {
+                "code": "WC",
+                "emblem": "https://crests.football-data.org/wm26.png",
+                "id": 2000,
+                "name": "FIFA World Cup",
+                "type": "CUP"
+            },
+            "group": null,
+            "homeTeam": {
+                "crest": "https://crests.football-data.org/818.svg",
+                "id": 818,
+                "name": "Colombia",
+                "shortName": "Colombia",
+                "tla": "COL"
+            },
+            "id": 537430,
+            "lastUpdated": "2026-07-04T03:45:56Z",
+            "matchday": null,
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 9374,
+                    "name": "Clément Turpin",
+                    "nationality": "France",
+                    "type": "REFEREE"
+                }
+            ],
+            "score": {
+                "duration": "REGULAR",
+                "fullTime": {
+                    "away": 1,
+                    "home": 1
+                },
+                "halfTime": {
+                    "away": 0,
+                    "home": 1
+                },
+                "winner": "HOME_TEAM"
+            },
+            "season": {
+                "currentMatchday": 3,
+                "endDate": "2026-07-19",
+                "id": 2398,
+                "startDate": "2026-06-11",
+                "winner": null
+            },
+            "stage": "LAST_32",
+            "status": "FINISHED",
+            "utcDate": "2026-07-04T01:30:00Z"
+        },
+        {
+            "area": {
+                "code": "INT",
+                "flag": null,
+                "id": 2267,
+                "name": "World"
+            },
+            "awayTeam": {
+                "crest": "https://crests.football-data.org/morocco.svg",
+                "id": 815,
+                "name": "Morocco",
+                "shortName": "Morocco",
+                "tla": "MAR"
+            },
+            "competition": {
+                "code": "WC",
+                "emblem": "https://crests.football-data.org/wm26.png",
+                "id": 2000,
+                "name": "FIFA World Cup",
+                "type": "CUP"
+            },
+            "group": null,
+            "homeTeam": {
+                "crest": "https://crests.football-data.org/canada.svg",
+                "id": 828,
+                "name": "Canada",
+                "shortName": "Canada",
+                "tla": "CAN"
+            },
+            "id": 537376,
+            "lastUpdated": "2026-07-02T15:20:12Z",
+            "matchday": null,
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [],
+            "score": {
+                "duration": "REGULAR",
+                "fullTime": {
+                    "away": null,
+                    "home": null
+                },
+                "halfTime": {
+                    "away": null,
+                    "home": null
+                },
+                "winner": null
+            },
+            "season": {
+                "currentMatchday": 3,
+                "endDate": "2026-07-19",
+                "id": 2398,
+                "startDate": "2026-06-11",
+                "winner": null
+            },
+            "stage": "LAST_16",
+            "status": "TIMED",
+            "utcDate": "2026-07-04T17:00:00Z"
+        },
+        {
+            "area": {
+                "code": "INT",
+                "flag": null,
+                "id": 2267,
+                "name": "World"
+            },
+            "awayTeam": {
+                "crest": "https://crests.football-data.org/773.svg",
+                "id": 773,
+                "name": "France",
+                "shortName": "France",
+                "tla": "FRA"
+            },
+            "competition": {
+                "code": "WC",
+                "emblem": "https://crests.football-data.org/wm26.png",
+                "id": 2000,
+                "name": "FIFA World Cup",
+                "type": "CUP"
+            },
+            "group": null,
+            "homeTeam": {
+                "crest": "https://crests.football-data.org/761.svg",
+                "id": 761,
+                "name": "Paraguay",
+                "shortName": "Paraguay",
+                "tla": "PAR"
+            },
+            "id": 537375,
+            "lastUpdated": "2026-07-02T15:20:12Z",
+            "matchday": null,
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [],
+            "score": {
+                "duration": "REGULAR",
+                "fullTime": {
+                    "away": null,
+                    "home": null
+                },
+                "halfTime": {
+                    "away": null,
+                    "home": null
+                },
+                "winner": null
+            },
+            "season": {
+                "currentMatchday": 3,
+                "endDate": "2026-07-19",
+                "id": 2398,
+                "startDate": "2026-06-11",
+                "winner": null
+            },
+            "stage": "LAST_16",
+            "status": "TIMED",
+            "utcDate": "2026-07-04T21:00:00Z"
+        }
+    ],
+    "resultSet": {
+        "competitions": "WC",
+        "count": 3,
+        "first": "2026-07-04",
+        "last": "2026-07-04",
+        "played": 1
+    }
+}
