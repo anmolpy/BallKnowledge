@@ -40,7 +40,7 @@
                 "tla": "MEX"
             },
             "id": 537425,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -106,7 +106,7 @@
                 "tla": "ENG"
             },
             "id": 537426,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -172,7 +172,7 @@
                 "tla": "BEL"
             },
             "id": 537422,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -246,7 +246,7 @@
                 "tla": "USA"
             },
             "id": 537421,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -312,7 +312,7 @@
                 "tla": "ESP"
             },
             "id": 537420,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -378,7 +378,7 @@
                 "tla": "POR"
             },
             "id": 537419,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -444,7 +444,7 @@
                 "tla": "SUI"
             },
             "id": 537429,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -510,7 +510,7 @@
                 "tla": "AUS"
             },
             "id": 537428,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -538,8 +538,8 @@
                     "home": 0
                 },
                 "penalties": {
-                    "away": null,
-                    "home": null
+                    "away": 4,
+                    "home": 2
                 },
                 "regularTime": {
                     "away": 1,
@@ -588,7 +588,7 @@
                 "tla": "ARG"
             },
             "id": 537427,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -662,7 +662,7 @@
                 "tla": "COL"
             },
             "id": 537430,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -728,7 +728,7 @@
                 "tla": "CAN"
             },
             "id": 537376,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -794,7 +794,7 @@
                 "tla": "PAR"
             },
             "id": 537375,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -860,23 +860,30 @@
                 "tla": "BRA"
             },
             "id": 537377,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": [],
+            "referees": [
+                {
+                    "id": 76608,
+                    "name": "Ismail Elfath",
+                    "nationality": "United States",
+                    "type": "REFEREE"
+                }
+            ],
             "score": {
-                "duration": "PENALTY_SHOOTOUT",
+                "duration": "REGULAR",
                 "fullTime": {
+                    "away": 2,
+                    "home": 1
+                },
+                "halfTime": {
                     "away": 0,
                     "home": 0
                 },
-                "halfTime": {
-                    "away": null,
-                    "home": null
-                },
-                "winner": null
+                "winner": "AWAY_TEAM"
             },
             "season": {
                 "currentMatchday": 3,
@@ -886,7 +893,7 @@
                 "winner": null
             },
             "stage": "LAST_16",
-            "status": "IN_PLAY",
+            "status": "FINISHED",
             "utcDate": "2026-07-05T20:00:00Z"
         },
         {
@@ -919,7 +926,73 @@
                 "tla": "MEX"
             },
             "id": 537378,
-            "lastUpdated": "2026-07-05T05:20:12Z",
+            "lastUpdated": "2026-07-06T05:20:12Z",
+            "matchday": null,
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 55970,
+                    "name": "Alireza Faghani",
+                    "nationality": "Iran",
+                    "type": "REFEREE"
+                }
+            ],
+            "score": {
+                "duration": "REGULAR",
+                "fullTime": {
+                    "away": 3,
+                    "home": 2
+                },
+                "halfTime": {
+                    "away": 2,
+                    "home": 1
+                },
+                "winner": "AWAY_TEAM"
+            },
+            "season": {
+                "currentMatchday": 3,
+                "endDate": "2026-07-19",
+                "id": 2398,
+                "startDate": "2026-06-11",
+                "winner": null
+            },
+            "stage": "LAST_16",
+            "status": "FINISHED",
+            "utcDate": "2026-07-06T01:00:00Z"
+        },
+        {
+            "area": {
+                "code": "INT",
+                "flag": null,
+                "id": 2267,
+                "name": "World"
+            },
+            "awayTeam": {
+                "crest": "https://crests.football-data.org/760.svg",
+                "id": 760,
+                "name": "Spain",
+                "shortName": "Spain",
+                "tla": "ESP"
+            },
+            "competition": {
+                "code": "WC",
+                "emblem": "https://crests.football-data.org/wm26.png",
+                "id": 2000,
+                "name": "FIFA World Cup",
+                "type": "CUP"
+            },
+            "group": null,
+            "homeTeam": {
+                "crest": "https://crests.football-data.org/765.svg",
+                "id": 765,
+                "name": "Portugal",
+                "shortName": "Portugal",
+                "tla": "POR"
+            },
+            "id": 537379,
+            "lastUpdated": "2026-07-06T05:20:12Z",
             "matchday": null,
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
@@ -928,8 +1001,8 @@
             "score": {
                 "duration": "REGULAR",
                 "fullTime": {
-                    "away": 2,
-                    "home": 1
+                    "away": null,
+                    "home": null
                 },
                 "halfTime": {
                     "away": null,
@@ -945,14 +1018,73 @@
                 "winner": null
             },
             "stage": "LAST_16",
-            "status": "PAUSED",
-            "utcDate": "2026-07-06T00:00:00Z"
+            "status": "TIMED",
+            "utcDate": "2026-07-06T19:00:00Z"
+        },
+        {
+            "area": {
+                "code": "INT",
+                "flag": null,
+                "id": 2267,
+                "name": "World"
+            },
+            "awayTeam": {
+                "crest": "https://crests.football-data.org/805.svg",
+                "id": 805,
+                "name": "Belgium",
+                "shortName": "Belgium",
+                "tla": "BEL"
+            },
+            "competition": {
+                "code": "WC",
+                "emblem": "https://crests.football-data.org/wm26.png",
+                "id": 2000,
+                "name": "FIFA World Cup",
+                "type": "CUP"
+            },
+            "group": null,
+            "homeTeam": {
+                "crest": "https://crests.football-data.org/usa.svg",
+                "id": 771,
+                "name": "United States",
+                "shortName": "USA",
+                "tla": "USA"
+            },
+            "id": 537380,
+            "lastUpdated": "2026-07-06T05:20:12Z",
+            "matchday": null,
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [],
+            "score": {
+                "duration": "REGULAR",
+                "fullTime": {
+                    "away": null,
+                    "home": null
+                },
+                "halfTime": {
+                    "away": null,
+                    "home": null
+                },
+                "winner": null
+            },
+            "season": {
+                "currentMatchday": 3,
+                "endDate": "2026-07-19",
+                "id": 2398,
+                "startDate": "2026-06-11",
+                "winner": null
+            },
+            "stage": "LAST_16",
+            "status": "TIMED",
+            "utcDate": "2026-07-07T00:00:00Z"
         }
     ],
     "resultSet": {
-        "count": 14,
+        "count": 16,
         "first": "2026-07-01",
-        "last": "2026-07-06",
-        "played": 12
+        "last": "2026-07-07",
+        "played": 14
     }
 }
