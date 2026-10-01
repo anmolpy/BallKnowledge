@@ -1,3 +1,4 @@
+#include "api_key.h"
 #include <iostream>
 #include <fstream>
 #include <nlohmann/json.hpp>
@@ -27,7 +28,7 @@ int main()
 {
     try
     {
-        ApiClient api("773fad6d52334e4887abc932c8b10f28");
+        ApiClient api(footballApiKey());
         std::string today = date_today();
         std::string endpoint = "/v4/competitions/WC/matches?dateFrom=2026-07-01&dateTo=" + today;
         using json = nlohmann::json;

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#include "api_key.h"
+#include <iostream>
 #include <nlohmann/json.hpp>
 #include <fstream>
 #include "apiClient.h"
@@ -188,7 +189,7 @@ int main()
     try
     {
         // use when fetching data from api
-        ApiClient api("773fad6d52334e4887abc932c8b10f28");
+        ApiClient api(footballApiKey());
 		std::string today = date_today();
         std::string endpoint = "/v4/competitions/WC/matches?dateFrom=" + today + "&dateTo=" + today;
         std::string response = api.Get(endpoint);
